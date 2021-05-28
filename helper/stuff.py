@@ -31,7 +31,7 @@ async def start(event):
     await event.reply(
         f"مرحبا `{ok.user.first_name}`\nهذا هو بوت ضغط الفيديوهات الذي يمكنك من ترميز الفيديوهات.\nتقليل حجم مقاطع الفيديو مع تغيير ضئيل في الجودة\nيمكنك إنشاء عينات/لقطات شاشة أيضًا.",
         buttons=[
-            [Button.inline("HELP", data="ihelp")],
+            [Button.inline("مساعدة", data="ihelp")],
             [
                 Button.url("قناة البوت", url="t.me/dramakokp"),
                 Button.url("المطور", url="t.me/Hayyoun"),
