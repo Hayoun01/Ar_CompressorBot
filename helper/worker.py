@@ -213,14 +213,14 @@ async def encod(event):
             pass
         xxx = await event.reply("`جارى التحميل...`")
         """ For Force Subscribe Channel"""
-         pp = []
-         async for x in event.client.iter_participants("@dramakokp"):
-            pp.append(x.id)
-         if (user.id) not in pp:
-            return await xxx.edit(
-                "يجب عليك الاشتراك في هذه القناة لاستخدام هذا البوت",
-               buttons=[Button.url("انضم للقناة", url="https://t.me/dramakokp")],
-           )
+        pp = []
+        async for x in event.client.iter_participants("@dramakokp"):
+           pp.append(x.id)
+        if (user.id) not in pp:
+           return await xxx.edit(
+               "يجب عليك الاشتراك في هذه القناة لاستخدام هذا الروبوت",
+              buttons=[Button.url("انضم للقناة", url="https://t.me/dramakokp")],
+          )
         if len(COUNT) > 4 and user.id != OWNER:
             llink = (await event.client(cl(LOG))).link
             return await xxx.edit(
