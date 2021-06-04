@@ -70,11 +70,11 @@ async def beck(event):
 async def sencc(e):
     key = e.pattern_match.group(1).decode("UTF-8")
     await e.edit(
-        "Choose Mode",
+        "اختر الوضع",
         buttons=[
             [
-                Button.inline("الضغط الافتراضي", data=f"encc{key}"),
                 Button.inline("ضغط مخصص", data=f"ccom{key}"),
+                Button.inline("الضغط الافتراضي", data=f"encc{key}"),
             ],
             [Button.inline("العودة", data=f"back{key}")],
         ],
@@ -87,8 +87,8 @@ async def back(e):
         "🔰  **ما يجب القيام به** 🔰",
         buttons=[
             [
-                Button.inline("توليد عينة", data=f"gsmpl{key}"),
                 Button.inline("لقطات الشاشة", data=f"sshot{key}"),
+                Button.inline("توليد عينة", data=f"gsmpl{key}"),
             ],
             [Button.inline("ضغط", data=f"sencc{key}")],
         ],
