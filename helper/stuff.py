@@ -36,6 +36,9 @@ async def start(event):
                 Button.url("قناة البوت", url="t.me/dramakokp"),
                 Button.url("المطور", url="t.me/Hayyoun"),
             ],
+            [
+                Button.url("سجل البوت ⚙️", url="https://t.me/joinchat/-6iM8JGJfEdhZGJk"),
+            ],
         ],
     )
 
@@ -99,7 +102,7 @@ async def back(e):
 
 
 async def ccom(e):
-    await e.edit("أرسل اسمك المخصص لهذا الملف")
+    await e.edit("أرسل الاسم المخصص لهذا الملف")
     wah = e.pattern_match.group(1).decode("UTF-8")
     wh = decode(wah)
     out, dl, thum, dtime = wh.split(";")
